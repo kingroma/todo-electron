@@ -1,0 +1,41 @@
+<html>
+    <div>
+        hello World
+    </div>
+    <div id="test">
+        
+    </div>
+    
+</html>
+<script>
+    function getCalendar(yyyymm){
+        var result = [] ; 
+        if ( yyyymm != undefined && yyyymm != null ) {
+            var d = new Date(yyyymm.substr(0,4),Number(yyyymm.substr(4,2)) - 1);
+
+            while ( d.getDay() != 0 ) {
+                d.setDate(d.getDate() - 1)
+            }
+            
+
+            for ( var i = 0 ; i < 35 ; i ++ ) {
+                var yyyy = d.getFullYear();
+                var mm = d.getMonth() + 1 ;
+                var dd = d.getDate() ; 
+
+                var obj = {
+                    d: d,
+                    yyyy:yyyy,
+                    mm:mm,
+                    dd:dd
+                }
+
+                result.push(obj);
+                d.setDate(d.getDate() + 1)
+            }
+        }
+        return result ; 
+    }
+
+    console.log(getCalendar('202107'))
+</script>

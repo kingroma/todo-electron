@@ -1,0 +1,59 @@
+body {
+    width:100%;
+    height:100%;
+    margin:0px ;
+    padding:0px ;
+    color:white ; 
+}
+
+table ,tr ,td ,div {
+    margin:0px ;
+    padding:0px ;
+}
+
+td {
+    vertical-align: top;
+}
+
+.calendar-top {
+    border-radius: 10px;
+    border:1px solid white ;
+    vertical-align: middle;
+}
+
+.calendar-td {
+    padding:2px;
+    border-spacing: 10px;
+}
+
+.sunday-text {
+    font-weight: bolder;
+    color:crimson ;
+}
+
+.saturday-text {
+    font-weight: bolder;
+    color:dodgerblue ;
+}
+
+.no-drag {
+    -ms-user-select: none; 
+    -moz-user-select: 
+    -moz-none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    user-select:none;
+}
+
+.hand {
+    cursor: pointer;
+    transition: background-color .3s;
+    padding:4px;
+    border-radius: 10px;
+    margin-left:3px;
+    margin-right:3px;
+}
+
+.hand:hover {
+    background-color:#abcdef
+}

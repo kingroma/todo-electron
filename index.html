@@ -1,0 +1,89 @@
+<html  class='no-drag'>
+    <head>
+        <script src="./lib/jquery-1.11.3.min.js"></script>
+        <script src="./js/basic.js"></script>
+        <script src="./js/calendar.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/basic.css"/>
+    </head>
+    <body>
+        <div style="width:100%;height:100%;background-color: #222222;">
+            <table style='width:100%;height:100%;'>
+                <tr>
+                    <td style='width:200px;vertical-align: top'>
+                        <div>
+                            Hello World
+                        </div>
+                        <div>
+                            <table style="width:100%;margin-top:10px;margin-bottom:10px">
+                                <tr>
+                                    <td>
+                                        <span class='yyyy'></span>년
+                                        <span class='mm'></span>월
+                                    </td>
+                                    <td style="text-align:right">
+                                        <span class='hand' onclick="back()"><</span> 
+                                        <span class='hand' onclick="next()">></span> 
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div>
+                            <div id="small-calendar"></div>
+                        </div>
+                        <table>
+                            <tr>
+                                <td>hello</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="width:1px ; background-color: #e2e2e2;">
+                         
+                    </td>
+                    <td style='vertical-align: top;height:100%;'>
+                        
+                        <table id="calendar" style="width:100%;height:100%;border-spacing: 6px;">
+                            <colgroup>
+                                <col width="14%"/>
+                                <col width="14%"/>
+                                <col width="14%"/>
+                                <col width="14%"/>
+                                <col width="14%"/>
+                                <col width="14%"/>
+                                <col width="14%"/>
+                            </colgroup>
+                            <tr>
+                                <td style="height:30px;background-color: #353535;padding:5px;" colspan="7">
+                                    <span class='hand' onclick="today()">오늘</span>
+                                    <span class='hand' onclick="back()"> < </span>
+                                    <span class='yyyy'>
+                                    </span>년
+                                    <span class='mm'>
+                                    </span>월
+                                    <span class='hand' onclick="next()"> > </span>
+                                </td>
+                            </tr>
+                            <tr style="height:30px;text-align:center;">
+                                <td class='calendar-top sunday-text'>일</td>
+                                <td class='calendar-top'>월</td>
+                                <td class='calendar-top'>화</td>
+                                <td class='calendar-top'>수</td>
+                                <td class='calendar-top'>목</td>
+                                <td class='calendar-top'>금</td>
+                                <td class='calendar-top saturday-text'>토</td>
+                            </tr>
+                            <tr class="calendar-row">
+                                
+                            </tr>
+                            
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+    </body>
+
+    <script>
+        
+    </script>
+</html>
